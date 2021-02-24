@@ -8,7 +8,7 @@ E-commerce is fast gaining ground as an accepted and used business paradigm. Mor
 
 **High Level Design**
 
-![](Aspose.Words.57608468-81a1-471c-8f77-a84eea9f9334.001.png)
+![](.vs/DemoKart/v16/usecase_diagram.PNG)
 
 
 
@@ -16,7 +16,7 @@ E-commerce is fast gaining ground as an accepted and used business paradigm. Mor
 
 Low Level design
 
-![](Aspose.Words.57608468-81a1-471c-8f77-a84eea9f9334.002.png)
+![](.vs/DemoKart/v16/class_diagram.PNG)
 
 **SWOT ANALYSIS**
 
