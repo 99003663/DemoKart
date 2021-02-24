@@ -6,7 +6,7 @@ The objective of this project is to develop a general purpose e-commerce store w
 
 E-commerce is fast gaining ground as an accepted and used business paradigm. More and more business houses are implementing web sites providing functionality for performing commercial transactions over the web. It is reasonable to say that the process of shopping on the web is becoming common place.
 # High Level Design
-class diagram sc.PNG
+.vs/DemoKart/v16/usecase sc.PNG
 
 **SWOT ANALYSIS**
 
