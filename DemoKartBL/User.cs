@@ -4,42 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MiniProject
+namespace ECommerceSite
 {
-    public class User
-    {
-        public string username  { get; set; }
-        public string address { get; set; }
-        public int userid  { get; set; }
-        public int mobileno  { get; set; }
-        public int password  { get; set; }
-        public User()
+        public class User
         {
+            public String FirstName { get; set; }
+            public String LastName { get; set; }
+            public double mobileNo { get; set; }
 
-        }
-
-        public User(string username,string address,int userid,int mobileno,int password)
-        {
-            this.username = username;
-            this.address = address;
-            this.userid = userid;
-            this.mobileno= mobileno ;
-            this.password = password;
-        }
-        public int Login(String Us,String Pass)
-        {
-            if(Us=="ctea"&&Pass=="ctea")
+            public int Login(String UserName, String Password)
             {
-                return 1;
+                if (UserName == "User" && Password == "pass")
+                {
+                    return 1;
+                }
+                else
+                {
+                    return 0;
+                }
             }
-            else
-            {
-                return 0;
-            }
+
         }
-        
-        
-
-
     }
-}
+
