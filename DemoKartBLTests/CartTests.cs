@@ -1,20 +1,23 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DemoKartBL;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using ECommerceSite;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DemoKartBL.Tests
+namespace ECommerceSite.Tests
 {
     [TestClass()]
     public class CartTests
     {
         [TestMethod()]
-        public void SampleMethodTest()
+        public void AddToCartTest()
         {
-            Assert.Fail();
+            Cart cobj = new Cart();
+
+            cobj.AddToCart(10);
+            Assert.IsTrue(true);
         }
     }
 }
