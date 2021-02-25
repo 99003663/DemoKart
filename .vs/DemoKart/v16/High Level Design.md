@@ -17,5 +17,6 @@ Relationship between and among actors in use case diagram:
 Actors: User and Admin
 
 Use cases :Login, View cart, Add items to cart, Make purchase, Payment
+![UsecaseDiagram](.vs/DemoKart/v16/usecase_diagram.PNG)
 
 
