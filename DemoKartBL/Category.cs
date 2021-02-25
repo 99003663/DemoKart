@@ -8,11 +8,6 @@ namespace ECommerceSite
 {
         public class Category
         {
-            //enum Categories {electronics=1, grocery, clothing, cosmetic }
-
-            //public String categories;
-            //public int categoriesId;
-
             public int categoriesId { get; set; }
             public String categories { get; set; }
 
