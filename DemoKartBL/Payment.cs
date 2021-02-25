@@ -4,50 +4,53 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShoppingCartPro
+namespace ECommerceSite
 {
-    class Payment
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    namespace DemoKartBL
     {
-        enum Mode
+        public class Payment
         {
-            Card = 1,
-            Cash = 2
-        }
-        public double CGSTTax(int Number, double price)
-        {
-            if (Number == (int)Mode.Card)
+            enum Mode { PayByCash = 1, PayByCard }
+            public double CGSTTax(int num, double price)
             {
-                double Price = 0;
-                Price = price * 0.18;
-                return Price;
-
+                if (num == (int)Mode.PayByCash)
+                {
+                    double Price = 0;
+                    Price = price;
+                    return Price;
+                }
+                else
+                {
+                    double Price = 0;
+                    Price = price + (price * 0.035);
+                    return Price;
+                }
             }
-            else
+            public double SGSTTax(int num, double price)
             {
-                double Price = 0;
-                Price = Price * 0.035 * 0.18;
-                return Price;
+                if (num == (int)Mode.PayByCash)
+                {
+                    double Price = 0;
+                    Price = price;
+                    return Price;
+                }
+                else
+                {
+                    double Price = 0;
+                    Price = price + (price * 0.035);
+                    return Price;
+                }
             }
-        }
-        public double SGSTTax(int Number, double price)
-        {
-            if (Number == (int)Mode.Cash)
-            {
-                double Price = 0;
-                Price = Price + 0;
-                return Price;
-
-            }
-            else
-            {
-                double Price = 0;
-                Price = price + (price * 0.035);
-                return Price;
-            }
-
         }
     }
 }
+  
 
 
 
